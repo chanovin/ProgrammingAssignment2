@@ -45,7 +45,7 @@ cacheSolve <- function(x, ...) {
   ## if no value is cached, get the matrix
   mtx <- x$get()
   ## solve for the inverse
-  inv <- solve(data, ...)
+  inv <- solve(mtx, ...)
   ## and cache the inverse
   x$setinv(inv)
   ## return the inverse
